@@ -1,0 +1,27 @@
+Checks: >
+  bugprone-*,
+  cppcoreguidelines-*,
+  performance-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -modernize-use-auto,
+  -cppcoreguidelines-pro-type-reinterpret-cast,
+  -cppcoreguidelines-pro-bounds-pointer-arithmetic,
+  -bugprone-easily-swappable-parameters,
+  -cppcoreguidelines-pro-type-cstyle-cast,
+  -performance-no-int-to-ptr
+
+WarningsAsErrors: "cppcoreguidelines-macro-usage,cppcoreguidelines-macro-to-enum"
+
+HeaderFilterRegex: ".*"
+
+CheckOptions:
+  readability-identifier-naming.VariableCase: lower_case
+  readability-identifier-naming.MemberCase: lower_case
+  readability-identifier-naming.ParameterCase: lower_case
+  readability-identifier-naming.FunctionCase: camelBack
+  readability-identifier-naming.StructCase: CamelCase
+  readability-identifier-naming.ClassCase: CamelCase
+  readability-identifier-naming.EnumCase: CamelCase
+  readability-identifier-naming.EnumConstantCase: UPPER_CASE
+  readability-identifier-naming.ConstantCase: UPPER_CASE
